@@ -3,9 +3,10 @@ let btn = document.querySelector('button')
 let flag = true
 
 btn.addEventListener('click', function () {
-    if (flag = !flag) {
-        div.style.backgroundColor = 'skyblue'
-    } else {
+    flag = !flag
+    if (flag) {
         div.style.backgroundColor = 'hotpink'
+    } else {
+        div.style.backgroundColor = 'skyblue'
     }
 })
